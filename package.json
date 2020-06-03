@@ -6,16 +6,6 @@
   "scripts": {
     "start": "react-native start"
   },
-  "keywords": [
-    "react-native",
-    "drag",
-    "resize",
-    "ios",
-    "android"
-  ],
-  "author": "Denis Evdokimov",
-  "license": "MIT",
-  "homepage": "https://github.com/CaptainOmega/react-native-drag-resize",
   "peerDependencies": {
     "react": "16.8.3",
     "react-native": "0.59.5"
