@@ -109,8 +109,8 @@ export class Connector extends Component {
           width: size,
           height: size,
           borderWidth: 2,
-          borderColor: 'black',
-          backgroundColor: 'black'
+          borderColor: 'red',
+          backgroundColor: 'red'
         }}
         {...this._panResponder.panHandlers}
       />
