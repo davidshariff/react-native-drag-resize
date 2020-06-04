@@ -4,6 +4,7 @@ import {
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 
 export const CONNECTOR_TOP_LEFT = 'tl';
 export const CONNECTOR_TOP_MIDDLE = 'tm';
@@ -105,15 +106,19 @@ export class Connector extends Component {
         style={{
           position: 'absolute',
           left: x,
-          top: y,
-          width: size,
-          height: size,
-          borderWidth: 2,
-          borderColor: 'red',
-          backgroundColor: 'red'
+          top: 0,
+          width: 16,
+          height: '100%',
+          //borderWidth: 2,
+          //borderColor: 'black',
+          //backgroundColor: 'yellow'
         }}
         {...this._panResponder.panHandlers}
-      />
+      >
+        <View style={{ width: 30, position: 'relative', left: -18, top: 0, height: '100%' }}>
+          <MaterialCommunityIcons name="drag" iconStyle={{ height: '100%', }} size={50} color="#fff"/>
+        </View>
+       </View>
     );
   }
 }

@@ -11,6 +11,7 @@
     "react-native": "0.59.5"
   },
   "dependencies": {
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "@expo/vector-icons": "^10.2.0"
   }
 }
