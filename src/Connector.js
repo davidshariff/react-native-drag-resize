@@ -115,7 +115,13 @@ export class Connector extends Component {
         }}
         {...this._panResponder.panHandlers}
       >
-        <View style={{ width: 30, position: 'relative', left: -18, top: 0, height: '100%' }}>
+        <View style={{ 
+          width: 30, 
+          position: 'relative', 
+          left: this.props.type === CONNECTOR_MIDDLE_RIGHT ? -18 : -9, 
+          top: 0, 
+          height: '100%' 
+        }}>
           <MaterialCommunityIcons name="drag" iconStyle={{ height: '100%', }} size={50} color="#fff"/>
         </View>
        </View>
